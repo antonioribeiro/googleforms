@@ -7,8 +7,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/antonioribeiro/googleforms.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/googleforms)
 [![Total Downloads](https://img.shields.io/packagist/dt/pragmarx/googleforms.svg?style=flat-square)](https://packagist.org/packages/pragmarx/googleforms)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
+Need to create a form and send data straight to a Google Forms Spreadsheet? This is your package!
 
 ## Install
 
