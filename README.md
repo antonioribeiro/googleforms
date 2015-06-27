@@ -7,7 +7,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/antonioribeiro/googleforms.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/googleforms)
 [![Total Downloads](https://img.shields.io/packagist/dt/pragmarx/googleforms.svg?style=flat-square)](https://packagist.org/packages/pragmarx/googleforms)
 
-Need to create a form and send data straight to a Google Forms Spreadsheet? This is your package!
+Need to create a form and send data straight to a [Google Forms Spreadsheet](https://www.google.com/forms/about/)? This is your package!
 
 ## Install
 
@@ -46,7 +46,6 @@ If you discover any security related issues, please email acr@antoniocarlosribei
 ## Credits
 
 - [Antonio Carlos Ribeiro](https://github.com/antonioribeiro)
-- [All Contributors](../../contributors)
 
 ## License
 
