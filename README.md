@@ -20,7 +20,7 @@ $ composer require pragmarx/googleforms
 ## Usage
 
 ``` php
-$googleform = new PragmaRX\GoogleForm('15dAXRn7hdsLhrlDxalvDG6F4ISHQbT4duG2lwl6OAHY');
+$googleform = new PragmaRX\GoogleForm\Client('15dAXRn7hdsLhrlDxalvDG6F4ISHQbT4duG2lwl6OAHY');
 
 $data = [
     'entry.386548658' => Input::get('name'),
