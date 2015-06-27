@@ -1,6 +1,6 @@
 <?php
 
-namespace League\GoogleForm\Test;
+namespace PragmaRX\GoogleForms\Test;
 
 class ExampleTest extends \PHPUnit_Framework_TestCase
 {
