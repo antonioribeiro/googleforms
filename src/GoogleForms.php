@@ -4,7 +4,7 @@ namespace PragmaRX\GoogleForms;
 
 use GuzzleHttp\Client as Guzzle;
 
-class GoogleForm {
+class GoogleForms {
 
 	/**
 	 * Google Form Id.
