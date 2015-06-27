@@ -5,9 +5,7 @@
 [![Build Status](https://img.shields.io/travis/antonioribeiro/googleforms/master.svg?style=flat-square)](https://travis-ci.org/antonioribeiro/googleforms)
 [![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/antonioribeiro/googleforms.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/googleforms/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/antonioribeiro/googleforms.svg?style=flat-square)](https://scrutinizer-ci.com/g/antonioribeiro/googleforms)
-[![Total Downloads](https://img.shields.io/packagist/dt/league/googleforms.svg?style=flat-square)](https://packagist.org/packages/league/googleforms)
-
-**Note:** Replace ```Antonio Carlos Ribeiro``` ```antonioribeiro``` ```https://antoniocarlosribeiro.com``` ```acr@antoniocarlosribeiro.com``` ```googleforms``` ```:package_description``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line.
+[![Total Downloads](https://img.shields.io/packagist/dt/pragmarx/googleforms.svg?style=flat-square)](https://packagist.org/packages/pragmarx/googleforms)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
 PSRs you support to avoid any confusion with users and contributors.
@@ -17,20 +15,25 @@ PSRs you support to avoid any confusion with users and contributors.
 Via Composer
 
 ``` bash
-$ composer require league/googleforms
+$ composer require pragmarx/googleforms
 ```
 
 ## Usage
 
 ``` php
-$googleform = new League\GoogleForm();
-echo $googleform->echoPhrase('Hello, League!');
-```
+$googleform = new PragmaRX\GoogleForm('15dAXRn7hdsLhrlDxalvDG6F4ISHQbT4duG2lwl6OAHY');
 
-## Testing
+$data = [
+    'entry.386548658' => Input::get('name'),
+    'entry.361290697' => Input::get('city'),
+    'entry.740093423' => Input::get('school'),
+    'entry.1928496279' => Input::get('email'),
+    'entry.494802185' => Input::get('phone'),
+];
 
-``` bash
-$ phpunit
+return [
+    'success' => $googleForm->post($data)
+];
 ```
 
 ## Contributing
