@@ -21,6 +21,13 @@ class GoogleForm {
 	protected $httpClient;
 
 	/**
+	 * Guzzle response to a post.
+	 *
+	 * @var \Psr\Http\Message\ResponseInterface
+	 */
+	private $httpResponse;
+
+	/**
 	 * Constructor.
 	 *
 	 * @param null $formId
@@ -53,9 +60,9 @@ class GoogleForm {
 	{
 		$data = $this->makeGoogleFormData($data);
 
-		$response = $this->httpClient->post("https://docs.google.com/forms/d/$this->formId/formResponse", $data);
+		$this->httpResponse = $this->httpClient->post("https://docs.google.com/forms/d/$this->formId/formResponse", $data);
 
-		return $response->getStatusCode() == 200;
+		return $this->getStatusCode() == 200;
 	}
 
 	/**
@@ -72,6 +79,15 @@ class GoogleForm {
 		}
 
 		return $data;
+	}
+
+	/**
+	 * Get the status code of the last post.
+	 *
+	 */
+	private function getStatusCode()
+	{
+		return $this->httpResponse->getStatusCode();
 	}
 
 }
